@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Welcome to the Car Data ETL Project by João Henrique. This project showcases a practical application of Python in an ETL (Extract, Transform, Load) process, focusing on car data. It involves extracting data from various file formats, transforming it for uniformity, and loading it into a MySQL database.
+This project showcases a practical application of Python in an ETL (Extract, Transform, Load) process, focusing on car data. It involves extracting data from various file formats, transforming it for uniformity, and loading it into a MySQL database.
 
 ## Project Overview
 
