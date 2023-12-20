@@ -1,38 +1,59 @@
-# Student Performance Analysis and Admission Automation
+# Car Data ETL (Extract, Transform, Load) Project Using Python
 
 ## Introduction
-This repository hosts a comprehensive Python application designed to streamline the process of analyzing student performance and automating the generation of admission letters. Utilizing a robust ETL pipeline, the application processes student examination data, assesses eligibility based on predefined criteria, and produces personalized admission letters for successful candidates. The results are neatly compiled into a formatted Excel workbook, complete with hyperlinks for easy navigation.
 
-## Features
-- **Data Extraction and Loading:** Integrates with Kaggle to download a dataset containing student performance metrics.
-- **Data Transformation:** Implements Python's powerful pandas library to clean and transform the data, ensuring it meets the necessary standards for processing.
-- **Performance Assessment:** Evaluates student scores against set benchmarks to determine eligibility for admission.
-- **Automated Letter Generation:** Utilizes docxtpl to create personalized admission letters for each successful student, storing them in a designated directory.
-- **Excel Dashboard Creation:** Leverages openpyxl to craft a styled Excel dashboard that provides a user-friendly interface to view student performance and access individual admission letters.
+Welcome to the Car Data ETL Project by João Henrique. This project showcases a practical application of Python in an ETL (Extract, Transform, Load) process, focusing on car data. It involves extracting data from various file formats, transforming it for uniformity, and loading it into a MySQL database.
 
-## How to Use
-1. Clone the repository to your local machine.
-2. Ensure you have the necessary Python libraries installed (pandas, openpyxl, faker, and docxtpl).
-   ```sh
-   pip install pandas openpyxl faker seaborn docxtpl
-   ```
-   
-## Project root
+## Project Overview
+
+1. **Data Download and Extraction:**
+   - Download a zip file containing car data from a remote server.
+   - Extract CSV, JSON, and XML files from the zip file.
+
+2. **Data Extraction:**
+   - Use Python's Pandas library to read data from each file format.
+
+3. **Data Transformation:**
+   - Perform currency conversion from USD to EUR.
+
+4. **Data Load:**
+   - Load the transformed data into a MySQL database.
+
+5. **Query Data:**
+   - Execute SQL queries to interact with the database.
+
+## Technical Aspects
+
+- Utilizes Python libraries like `requests`, `pandas`, `xml.etree.ElementTree`, and `mysql.connector`.
+- Implements currency conversion using web scraping techniques.
+- Provides a comprehensive guide for setting up and running the project.
+
+## Execution Guide
+
+- **Setting Up:**
+  - Ensure required Python libraries are installed.
+  - Download your Kaggle credentials and replace the placeholder in the code.
+
+- **Running the Code:**
+  - The script is divided into functions, each handling a part of the ETL process.
+  - Run the entire script to see the ETL process or step through each function individually.
+
+- **Logging:**
+  - Logs are written to `log_file.txt`, useful for debugging or tracking.
+
+## Requirements
+
+- Python (version 3.11.3)
+- MySQL (version 8.0.34)
+- Additional Python libraries: `pandas`, `requests`, `xml.etree.ElementTree`, `mysql.connector`, `glob`, `datetime`, `zipfile`, `json`
+
+## Installation
+
+You can install these libraries using pip:
+
 ```sh
-│
-├── download/                    # Directory where the dataset is downloaded
-├── extracted_files/             # Directory where the dataset is extracted
-├── admitted_students/           # Output directory for admission letters
-├── admission_lists/             # Output directory for the Excel dashboard
-├── project_assets/              # Directory for project assets like templates
-│   ├── kaggle.json              # Kaggle API credentials
-│   └── admission_template.docx  # Template for admission letters
-└── main.py                      # Main script to run the project
+pip install requests zipfile36 pandas glob2 mysql-connector-python datetime
 ```
-
-## Requirements:
-- Python 3.x
-- MySQL 8.x
 
 ## License
 
